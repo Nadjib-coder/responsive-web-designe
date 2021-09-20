@@ -1,0 +1,522 @@
+/*start global rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*end global rules*/
+
+/*start header*/
+header {
+    background: url('../images/bckgheader.jpg') no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    min-height: 450px;
+    position: relative;
+    
+}
+header div.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-color: rgba(1, 104, 155, 0.5);
+}
+header div.overlay h1 {
+    font-size: 60px;
+    margin-top: 100px;  
+}
+header div.overlay .plan {
+    border: 4px solid #FFF;
+    font-size: 25px;
+    width: 48%;
+    padding: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+header div.overlay .container  div:first-of-type:hover,
+header div.overlay .container  .last-div:hover {
+    cursor: pointer;
+    box-shadow: 0 0 8px 5px green !important;
+}
+header div.overlay .container  div:not(:first-of-type):hover {
+    cursor: pointer;
+    box-shadow: 0 0 8px 5px red;
+}
+@media (max-width: 767px) {
+    h1 {
+        margin-top: 30px !important;
+    }
+    header div.overlay .plan {
+        float: none;
+        margin: 0 auto 20px;
+        font-size: 22px ;
+    }
+}
+header div.overlay .order {
+    border: 4px solid #FFF;
+    font-size: 25px;
+    padding: 20px;
+    margin: 30px 1% 0;
+
+}
+/*end header*/
+
+/*start nav bar*/
+nav {
+    background-color: #666;
+    color: #FFF;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+}
+nav h3 {
+    color: #FFF;
+    user-select: none;
+}
+nav span{
+    color: rgb(24, 216, 24);
+}
+nav ul li{
+    padding: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 20px;
+}
+nav ul li a:hover{
+    background-color: #FFF;
+    color: rgb(8, 109, 224);;
+    cursor: pointer;
+    font-weight: bold;
+}
+/*start nav bar*/
+
+/*start features*/
+.features {
+    padding: 30px;
+}
+.h1 {
+    color: #555;
+}
+.features section {
+    margin-bottom: 30px;
+    color: #555;
+    padding: 0 20px 0 0;
+}
+.features section h2 {
+    margin:0px 0 8px;
+}
+.features section p {
+    line-height: 1.6;
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .features section {
+        text-align: center;
+    }
+}
+@media (min-width: 768px) {
+    .features section {
+        width: 50%;
+    }
+}
+@media (min-width: 992px) { /*meduim screen rules*/
+    .features section {
+        width: 32%;
+    }
+}
+/*end features*/
+
+/*start about us*/
+.about-us {
+    background-color:  #ececec;
+    padding: 30px 0;
+}
+.about-us .h1 {
+    font-size: 50px;
+    color: #848484;
+    margin: 0;
+    
+}
+.about-us .res-paragraph {
+    color: #848484;
+}
+/*end about us*/
+
+/*start our wrok*/
+@media (max-width: 767px) {
+    .our-works .image {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .our-works .image {
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .our-works .image {
+        width: 33.33333%;
+    }
+}
+@media (min-width: 1200px) {
+    .our-works .image {
+        width: 25%;
+    }
+}
+/*end our wrok*/
+
+/*start our pricing table*/
+.pric-table {
+    background-color: #444;
+    color: #FFF;
+    padding: 50px 0;
+}
+.pric-table .h1 {
+    margin: 0 0 30px;
+    color: #FFF;
+    font-size: 40px;
+}
+.pric-table .pricing-plan {
+    border: 3px solid #FFF;
+    padding: 20px 0;
+    position: relative;
+}
+.pric-table .pricing-plan h3 {
+    font-size: 26px;
+    margin: 0 0 20px;
+
+}
+.pric-table .pricing-plan .princing {
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 0 12px;
+    color:  #BFBFBF;
+}
+.pric-table .pricing-plan ul {
+    line-height: 1.6;
+    font-size: 18px;
+}
+@media (max-width: 767px) {
+    .pric-table .pricing-plan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .pric-table .pricing-plan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 992px) {
+
+    .pric-table .pricing-plan:not(.ultimate) {
+        margin-right: 1%;
+    }
+    .pric-table .pricing-plan {
+        width: 32%;
+    }
+    .pric-table .pricing-plan.plus {
+        left: 33%;
+    }
+    .pric-table .pricing-plan.premium {
+        right: 33%;
+    }
+}
+/*end our pricing table*/
+
+/*start what they say*/
+.they-say {
+    padding: 50px 0;
+}
+.they-say .h1 {
+    margin: 0 0 30px;
+    color: #666;
+    font-size: 40px;
+}
+.they-say .person-say {
+    background-color: #EEE;
+    padding: 20px;
+    margin: 0 0 20px;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+}
+.they-say .person-say .avatar {
+    width: 100px;
+    margin-right: 15px;
+    margin-top: 13px;
+}
+.they-say .person-say h3 {
+    margin: 3px 0 10px;
+}
+.they-say .person-say p {
+    margin:0;
+    line-height: 1.4;
+    width: calc(100% - 115px);
+}
+@media (max-width: 767px) {
+    .they-say .person-say .avatar {
+        float: none;
+        margin: auto;
+    }
+    .they-say .person-say h3 {
+        float: none;
+        text-align: center;
+    }
+    .they-say .person-say p {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) {
+    .they-say .person-say:first-of-type {
+        width: 100%
+    }
+    .they-say .person-say:not(:first-of-type) {
+        width: 49%;
+    }
+    .they-say .person-say:last-of-type {
+        margin-left: 2%;
+    }
+}
+@media (min-width: 768px) and (max-width:991px) {
+    .they-say .person-say:not(:first-of-type) .avatar {
+        float: none;
+        margin: auto;
+    }
+    .they-say .person-say:not(:first-of-type) h3 {
+        float: none;
+        text-align: center;
+    }
+    .they-say .person-say:not(:first-of-type) p {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (min-width: 992px) {
+    .they-say .person-say:first-of-type {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+/*end what they say*/
+
+/*start information*/
+.information {
+    background-color:  #ececec;
+    padding: 30px 0;
+    font-size: 18px;
+}
+.information .h1 {
+    font-size: 50px;
+    color: #848484;
+}
+.information .info-list li {
+    display: inline-block;
+    background-color: #DDD;
+    padding: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.information .info-list li:first-of-type {
+    border-radius: 8px 0 0 0;
+}
+.information .info-list li:last-of-type {
+    border-radius: 0 8px 0 0;
+}
+.information .info-list li:hover {
+    background-color: #FFF;
+}
+.information .info-list li.selected {
+    background-color: #FFF;
+    color: rgb(8, 109, 224);
+}
+.information .info-content {
+    margin-bottom: 30px;
+    
+}
+.information .info-content > section {
+    background-color: #FFF;
+    padding: 15px;
+    line-height: 1.6;
+    border-radius: 0 0 8px 8px;
+}
+.information .info-content > section:not(:first-of-type) {
+    display: none;
+}
+.information .info-content section .img-info  {
+    width: 10%;
+    margin-right: 10px;
+    margin-top: 15px;
+    
+}
+.information .info-content section .img-info img {
+    border-radius: 30%;
+}
+@media (max-width: 767px) {
+    .information .info-list li {
+        display: block;
+    }
+    .information .info-content section .img-info {
+        float: none;
+        margin: auto;
+    }
+    .information .info-content section p {
+        text-align: center;
+    }
+}
+/*end information*/
+
+/*start footer*/
+footer {
+    background-color: #333;
+    color: #EEE;
+}
+footer .copyright,
+footer .design {
+    padding: 20px;
+    text-align: center;
+}
+footer span {
+    color: red;
+    font-weight: bold;
+}
+@media (max-width: 767px) {
+    footer .copyright,
+    footer .design {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    footer .copyright,
+    footer .design {
+        width: 50%;
+    }
+}
+/*end footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*start my freamwork*/
+
+/*start media query*/
+@media (max-width: 767px) {
+    .visible-xs {
+        display: block !important;
+    }
+    .hidden-xs {
+        display: none !important;
+    }
+    .res-paragraph {
+        text-align: center;
+        font-size: 19px !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { /*small screen rules*/
+    .container {
+        width: 750px;
+    }
+    .visible-sm {
+        display: block !important;
+    }
+    .hidden-sm {
+        display: none !important;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1199px) { /*meduim screen rules*/
+    .container {
+        width: 970px;
+
+    }
+    .visible-md {
+        display: block !important;
+    }
+    .hidden-md {
+        display: none !important;
+    }
+}
+@media (min-width: 1200px) { /*large screen rules*/
+    .container {
+        width: 1170px ;
+    }
+    .visible-lg {
+        display: block !important;
+    }
+    .hidden-lg {
+        display: none !important;
+    }
+}
+/*end media query */
+
+
+/*strat element */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+.text-center {
+    text-align: center;
+}
+.clearfix {
+    clear: both;
+}
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+    display: none;
+}
+.float-l {
+    float: left;
+}
+.float-r {
+    float: right;
+}
+.h1 {
+    font-size: 2em;
+}
+.res-paragraph {
+    line-height: 1.8;
+    font-size: 22px;
+}
+.res-img {
+    width: 100%;
+}
+.classic-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.img-thumbnail {
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+/*end element*/
+
+/*end my freamwork*/
